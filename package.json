@@ -1,0 +1,45 @@
+{
+  "name": "dsh-study-ask",
+  "version": "0.1.0",
+  "type": "module",
+  "author": "P1gG0dG0d",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/P1gG0dG0d/dsh-study-ask.git"
+  },
+  "homepage": "https://github.com/P1gG0dG0d/dsh-study-ask#readme",
+  "bugs": {
+    "url": "https://github.com/P1gG0dG0d/dsh-study-ask/issues"
+  },
+  "description": "学习提问 (Study Ask): select text in a DSH conversation and question it in a dedicated right-sidebar chat that never clutters the session list.",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "study",
+    "sidebar",
+    "question"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
