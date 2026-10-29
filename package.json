@@ -41,5 +41,9 @@
     "client": {
       "platform": "web"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
